@@ -49,6 +49,6 @@ yarn start
 
 You can serve it as well, if you need live dev environment.
 
-## waifu-picker
+## @wp: waifu-picker
 
 This is a git submodule pointing to the original repo: [ringavirda/waifu-picker: Select your waifu with style!](https://github.com/ringavirda/waifu-picker)
