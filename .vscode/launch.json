@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug @demo/node",
+      "program": "${workspaceFolder}/packages/node/dist/app.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build: @demos/node"
+    },
+    {
+      "name": "Debug @demo/types",
+      "program": "${workspaceFolder}/packages/types/dist/app.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build: @demos/types"
+    },
+    {
+      "name": "Debug @wp - front",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5000",
+      "webRoot": "${workspaceFolder}/packages/@wp/dist/public"
+    },
+    {
+      "name": "Debug @wp - server",
+      "program": "${workspaceFolder}/packages/@wp/dist/server.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build: @wp"
+    }
+  ]
+}

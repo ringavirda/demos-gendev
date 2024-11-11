@@ -1,0 +1,19 @@
+{
+  "name": "@demos/types",
+  "packageManager": "yarn@4.5.1",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/app.js",
+    "watch": "tsc --watch",
+    "serve": "node --watch ./dist/app.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}

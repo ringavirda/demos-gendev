@@ -1,0 +1,59 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build: @demos/node",
+      "type": "shell",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/packages/node"
+      },
+      "command": "yarn build",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Build: @demos/types",
+      "type": "shell",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/packages/types"
+      },
+      "command": "yarn build",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Build: @wp",
+      "type": "shell",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/packages/@wp"
+      },
+      "command": "yarn build",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    }
+  ]
+}
